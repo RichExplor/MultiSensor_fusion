@@ -1,0 +1,3 @@
+<launch>
+    <node name="MultiSensor_rviz" pkg="rviz" type="rviz" output="log" args="-d $(find MultiSensor_fusion)/launch/config/vins_rviz_config.rviz" />
+</launch>

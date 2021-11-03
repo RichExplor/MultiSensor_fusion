@@ -1,0 +1,19 @@
+<launch>
+
+    <!-- visual_inertial -->
+    <include file="$(find MultiSensor_fusion)/launch/module_visual.launch" />
+
+    <!-- global fusion -->
+    <include file="$(find MultiSensor_fusion)/launch/module_global.launch" />
+
+    <!-- lidar odometry -->
+    <include file="$(find MultiSensor_fusion)/launch/module_loam.launch" />
+
+    <!-- rviz -->
+    <include file="$(find MultiSensor_fusion)/launch/module_rviz.launch" />
+
+    <!-- Image conversion -->
+    <node pkg="image_transport" type="republish" name="vins_republish" args="compressed in:=/galaxy_camera/image raw out:=/galaxy_camera/image" output="screen" respawn="true"/>
+
+
+</launch>

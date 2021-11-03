@@ -1,0 +1,5 @@
+<launch>
+
+    <node pkg="MultiSensor_fusion" type="MultiSensor_fusion_global_fusion" name="MultiSensor_fusion_global_fusion" output="screen" />
+
+</launch>
