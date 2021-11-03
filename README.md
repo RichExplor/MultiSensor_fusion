@@ -17,3 +17,10 @@ roslaunch MultiSensor_fusion run_fusion.launch
 
 ## 3. 运行自己的数据集
 rosbag play xxx.bag --pause -r0.5
+
+
+## Acknowledgements
+Thanks for following work:
+
+LOAM (LOAM: Lidar Odometry and Mapping in Real-time)
+VINS-Mono (VINS-Mono: A Robust and Versatile Monocular Visual-Inertial State Estimator)
